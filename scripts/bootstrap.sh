@@ -10,7 +10,7 @@ if [ ! -d "$DOWNLOAD_DIR" ]; then
   mkdir -p "$DOWNLOAD_DIR"
 fi
 # for setting the env variables in a non-vagrant startup
-# make etc/profile.d/islandora.sh
+# 
 touch /etc/profile.d/islandora.sh
 echo "export CATALINA_HOME="$CATALINA_HOME >> /etc/profile.d/islandora.sh
 echo "export FEDORA_HOME="$FEDORA_HOME >> /etc/profile.d/islandora.sh
